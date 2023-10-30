@@ -1,0 +1,292 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', 'sans-serif';  
+}
+
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+body {
+    position: relative;
+    min-height: 100%;
+    box-sizing: inherit;
+}
+
+li {
+    list-style: none;
+}
+
+
+/* NAVIGATION BAR */
+
+header {
+    position: relative;
+    padding: 0 3rem;
+    background-color: rgb(40, 30, 79);
+}
+
+.nhan1 {
+    width: 100%;
+    height: 100px;
+    max-width: 1200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nhan3 {
+    width: 10rem;
+}
+
+.nhan5 {
+    font-size: 1.2rem;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+.nhan1 .nhan4 {
+    display: flex;
+    gap: 15rem;
+}
+
+.nhan4 .nhan5:hover {
+    color: rgb(140, 135, 235);
+    transition: 0.3s;
+}
+
+/* highlight the active page */
+.nhan4 .nhan5.active {
+    color: rgb(140, 135, 235);
+}
+
+.nhan6 i {
+    font-size: 1.3rem;
+}
+
+.nhan6 .nhan5:hover {
+    color: rgb(140, 135, 235);
+    transition: 0.3s;
+}
+
+/* highlight the active login or register page */
+.nhan6 .nhan5.active {
+    color: rgb(140, 135, 235);
+}
+
+/* FOOTER */
+footer {
+   text-align: center;
+   background-color: rgb(40, 30, 79);
+   color: white;
+   padding: 20px;
+   bottom: 0;
+   width: 100%;
+   position: absolute;
+}
+
+.nhan7 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.nhan7 h3 {
+    font-size: 1.8rem;
+    line-height: 3rem;
+}
+
+.nhan8 {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+}
+
+.nhan8 li {
+    margin: 0 10px;
+}
+
+.nhan8 a {
+    text-decoration: none;
+    color: white;
+}
+
+.nhan8 a i {
+    font-size: 1.1rem;
+    transition: color .4s ease;
+}
+
+.nhan8 a:hover i {
+    color: rgb(56, 56, 200);
+}
+
+.nhan9 {
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.nhan9 p {
+    font-size: 1rem;
+    word-spacing: 2px;
+}
+
+/* Login Page */
+.nhan10 {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 10rem;
+    padding-bottom: 30rem;
+    background: url('images/login.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.nhan11 {
+    width: 420px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    color: white;
+    border-radius: 10px;
+    padding: 30px 40px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+}
+
+.nhan11 h1 {
+    font-size: 2rem;
+    text-align: center;
+}
+
+.nhan11 .nhan12 {
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+    position: relative;
+}
+
+.nhan12 input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    color: white;
+    padding: 20px 45px 20px 20px;
+}
+
+.nhan12 input::placeholder {
+    color: white;
+}
+
+.nhan12 i {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 1rem;
+}
+
+.nhan11 .nhan13 {
+    display: flex;
+    justify-content: space-between;
+    font-size: 1rem;
+    margin: -1rem 0 1rem
+}
+
+.nhan13 label input {
+    accent-color: white;
+    margin-right: 3px;
+}
+
+.nhan13 a {
+    color: white;
+    text-decoration: none;
+}
+
+.nhan13 a:hover {
+    text-decoration: underline;
+}
+
+.nhan11 .nhan14 {
+    width: 100%;
+    height: 2.8rem;
+    background: white;
+    border: none;
+    outline: none;
+    border-radius: 2.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 1rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.nhan11 .nhan15 {
+    font-size: 1rem;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.nhan15 p a {
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.nhan15 p a:hover {
+    text-decoration: underline;
+}
+
+/* Register page */
+.nhan11 .nhan16 {
+    width: 100%;
+    height: 50px;
+    margin: 30px 0 35px 0;
+    position: relative;
+}
+
+.nhan16 input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    color: white;
+    padding: 20px 45px 20px 20px;
+}
+
+.nhan16 input::placeholder {
+    color: white;
+    opacity: 0.7;
+    font-style: italic;
+}
+
+.nhan11 .nhan17 {
+    width: 100%;
+    height: 2.8rem;
+    background: white;
+    border: none;
+    outline: none;
+    border-radius: 2.5rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 1rem;
+    color: #333;
+    font-weight: 600;
+    margin-top: 20px;
+} 
+
