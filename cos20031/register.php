@@ -42,6 +42,8 @@
                     <select name = "gender" id="gender" required>
                         <option value="Male">Male</option>
                         <option value="Female">Female</option>
+                        <option value="Others">Others</option>
+
                     </select>
                 </div>
                 <div class="nhan16">
