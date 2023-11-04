@@ -307,6 +307,7 @@ footer {
 .course-table td {
     width: 33.33%;
     padding: 10px;
+    padding-bottom: 40px;
 }
 
 .course-item {
