@@ -1,3 +1,5 @@
+------------------------------------------user----------------------------------------------
+
 CREATE TABLE user_information (
   user_id INT NOT NULL AUTO_INCREMENT,
   full_name VARCHAR(255) NOT NULL,
@@ -6,20 +8,32 @@ CREATE TABLE user_information (
   phone_number VARCHAR(255) NOT NULL,
   email VARCHAR(255) NOT NULL,
   address VARCHAR(255) NOT NULL,
-  educational_background VARCHAR(255) NOT NULL,
-  working_experience VARCHAR(255) NOT NULL,
   PRIMARY KEY (user_id)
 );
 
-
-CREATE TABLE user_login (
+CREATE TABLE educational_backgrounds (
+  educational_background_id INT NOT NULL AUTO_INCREMENT,
   user_id INT NOT NULL,
-  username VARCHAR(50) NOT NULL,
-  password VARCHAR(255) NOT NULL,
-  PRIMARY KEY (user_id),
+  degree VARCHAR(255) NOT NULL,
+  institution VARCHAR(255) NOT NULL,
+  start_date DATE NOT NULL,
+  end_date DATE NOT NULL,
+  PRIMARY KEY (educational_background_id),
   FOREIGN KEY (user_id) REFERENCES user_information(user_id)
 );
 
+CREATE TABLE working_experiences (
+  working_experience_id INT NOT NULL AUTO_INCREMENT,
+  user_id INT NOT NULL,
+  job_title VARCHAR(255) NOT NULL,
+  employer VARCHAR(255) NOT NULL,
+  start_date DATE NOT NULL,
+  end_date DATE NOT NULL,
+  PRIMARY KEY (working_experience_id),
+  FOREIGN KEY (user_id) REFERENCES user_information(user_id)
+);
+
+----------------------------------------------job--------------------------------------------------
 
 CREATE TABLE job_description (
   job_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
@@ -27,9 +41,51 @@ CREATE TABLE job_description (
   recruiter VARCHAR(255) NOT NULL,
   application_deadline DATE NOT NULL,
   salary DECIMAL(10,2) NOT NULL,
-  working_location VARCHAR(255) NOT NULL,
-  requirements TEXT NOT NULL,
-  benefits TEXT NOT NULL,
-  contact VARCHAR(255) NOT NULL
+  working_location VARCHAR(255) NOT NULL
+  category VARCHAR(50) NOT NULL,
+  applicant_count INT NOT NULL DEFAULT 0  -- Add this column
 );
 
+CREATE TABLE job_requirements (
+  job_requirement_id INT NOT NULL AUTO_INCREMENT,
+  job_id INT NOT NULL,
+  requirement TEXT NOT NULL,
+  PRIMARY KEY (job_requirement_id),
+  FOREIGN KEY (job_id) REFERENCES job_description(job_id)
+);
+
+CREATE TABLE job_benefits (
+  job_benefit_id INT NOT NULL AUTO_INCREMENT,
+  job_id INT NOT NULL,
+  benefit TEXT NOT NULL,
+  PRIMARY KEY (job_benefit_id),
+  FOREIGN KEY (job_id) REFERENCES job_description(job_id)
+);
+
+-----------------------------------------------course----------------------------------------------
+
+CREATE TABLE courses (
+  course_id INT NOT NULL AUTO_INCREMENT,
+  course_name VARCHAR(255) NOT NULL,
+  course_length INT NOT NULL,
+  course_price DECIMAL(10,2) NOT NULL,
+  category VARCHAR(50) NOT NULL,
+  enrollee_count INT NOT NULL DEFAULT 0  -- Add this column
+  PRIMARY KEY (course_id)
+);
+
+CREATE TABLE course_outlines (
+  outline_id INT NOT NULL AUTO_INCREMENT,
+  course_id INT NOT NULL,
+  outline_text TEXT NOT NULL,
+  PRIMARY KEY (outline_id),
+  FOREIGN KEY (course_id) REFERENCES courses(course_id)
+);
+
+CREATE TABLE course_outcomes (
+  outcome_id INT NOT NULL AUTO_INCREMENT,
+  course_id INT NOT NULL,
+  outcome_text TEXT NOT NULL,
+  PRIMARY KEY (outcome_id),
+  FOREIGN KEY (course_id) REFERENCES courses(course_id)
+);
