@@ -21,7 +21,7 @@ li {
 }
 
 
-/* NAVIGATION BAR */
+/* Navigation Bar */
 
 header {
     position: relative;
@@ -51,7 +51,7 @@ header {
 
 .nhan1 .nhan4 {
     display: flex;
-    gap: 15rem;
+    gap: 12rem;
 }
 
 .nhan4 .nhan5:hover {
@@ -78,7 +78,7 @@ header {
     color: rgb(140, 135, 235);
 }
 
-/* FOOTER */
+/* Footer */
 footer {
    text-align: center;
    background-color: rgb(40, 30, 79);
@@ -250,6 +250,7 @@ footer {
 }
 
 /* Register page */
+
 .nhan11 .nhan16 {
     width: 100%;
     height: 50px;
@@ -290,3 +291,57 @@ footer {
     margin-top: 20px;
 } 
 
+/* Courses page */
+
+.nhan18{
+    margin: 30px;
+    min-height: 180vh;
+    justify-content: center;
+}
+
+.course-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.course-table td {
+    width: 33.33%;
+    padding: 10px;
+}
+
+.course-item {
+    background-color: #f2f2f2;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h3{
+    margin-top: 0;
+    text-align: center;
+    font-size: 22px;
+}
+
+.course-description {
+    font-style: italic;
+    color: #666;
+}
+
+.course-details li {
+    margin-bottom: 5px;
+}
+
+.register-button {
+    display: block;
+    width: 100%;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.register-button:hover {
+    background-color: #0056b3;
+}
