@@ -85,8 +85,8 @@ footer {
    color: white;
    padding: 20px;
    width: 100%;
-   bottom: 0;
-   position: absolute;
+   /* bottom: 0;
+   position: absolute; */
 }
 
 .nhan7 {
