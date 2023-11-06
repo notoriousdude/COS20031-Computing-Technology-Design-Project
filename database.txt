@@ -16,8 +16,6 @@ CREATE TABLE educational_backgrounds (
   user_id INT NOT NULL,
   degree VARCHAR(255) NOT NULL,
   institution VARCHAR(255) NOT NULL,
-  start_date DATE NOT NULL,
-  end_date DATE NOT NULL,
   PRIMARY KEY (educational_background_id),
   FOREIGN KEY (user_id) REFERENCES user_information(user_id)
 );
@@ -27,8 +25,6 @@ CREATE TABLE working_experiences (
   user_id INT NOT NULL,
   job_title VARCHAR(255) NOT NULL,
   employer VARCHAR(255) NOT NULL,
-  start_date DATE NOT NULL,
-  end_date DATE NOT NULL,
   PRIMARY KEY (working_experience_id),
   FOREIGN KEY (user_id) REFERENCES user_information(user_id)
 );
@@ -70,7 +66,7 @@ CREATE TABLE courses (
   course_length INT NOT NULL,
   course_price DECIMAL(10,2) NOT NULL,
   category VARCHAR(50) NOT NULL,
-  enrollee_count INT NOT NULL DEFAULT 0  -- Add this column
+  enrolment_count INT NOT NULL DEFAULT 0  -- Add this column
   PRIMARY KEY (course_id)
 );
 
