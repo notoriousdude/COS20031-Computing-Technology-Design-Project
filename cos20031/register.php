@@ -65,10 +65,6 @@
                     <label for="institution">Institution </label>
                     <input type="text" id="institution" placeholder="Enter your institution (Optional)" name="institution">
                 </div>
-                 <div class="nhan16">
-                    <label for="institution">Institution </label>
-                    <input type="text" id="institution" placeholder="Enter your institution (Optional)" name="institution">
-                </div>
                 <div class="nhan16">
                     <label for="jobexperiences">Job experiences </label>
                     <input type="text" id="jobexperiences" placeholder="Enter 1 of your past job position (Optional)" name="jobexperiences">
@@ -79,11 +75,11 @@
                 </div>
                 <div class="nhan16">
                     <label for="username">Username</label>
-                    <input type="text" id="username" placeholder="Enter your username" name="username" required>
+                    <input type="text" id="username" placeholder="Enter your username" name="username" pattern=".{1,50}" required>
                 </div>
                 <div class="nhan16">
                     <label for="password1">Password</label>
-                    <input type="password" id="password1" placeholder="Enter your password" name="password" required>
+                    <input type="password" id="password1" placeholder="Enter your password" pattern=".{1,255}" name="password" required>
                 </div>
                 <div class="nhan16">
                     <label for="password2">Confirm password</label>
