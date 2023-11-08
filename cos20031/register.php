@@ -43,12 +43,7 @@
                         <option value="Male">Male</option>
                         <option value="Female">Female</option>
                         <option value="Others">Others</option>
-
                     </select>
-                </div>
-                <div class="nhan16">
-                    <label for="username">Username</label>
-                    <input type="text" id="username" placeholder="Enter your username" name="username" required>
                 </div>
                 <div class="nhan16">
                     <label for="email">Email</label>
@@ -61,6 +56,30 @@
                 <div class="nhan16">
                     <label for="phonenumber">Phone number</label>
                     <input type="text" id="phonenumber" placeholder="Enter your phone number" name="phonenumber" pattern="[0-9]+" required>
+                </div>
+                <div class="nhan16">
+                    <label for="degree">Degree</label>
+                    <input type="text" id="degree" placeholder="Enter your degree (Optional)" name="degree">
+                </div>
+                <div class="nhan16">
+                    <label for="institution">Institution </label>
+                    <input type="text" id="institution" placeholder="Enter your institution (Optional)" name="institution">
+                </div>
+                 <div class="nhan16">
+                    <label for="institution">Institution </label>
+                    <input type="text" id="institution" placeholder="Enter your institution (Optional)" name="institution">
+                </div>
+                <div class="nhan16">
+                    <label for="jobexperiences">Job experiences </label>
+                    <input type="text" id="jobexperiences" placeholder="Enter 1 of your past job position (Optional)" name="jobexperiences">
+                </div>
+                <div class="nhan16">
+                    <label for="employer">Employer </label>
+                    <input type="text" id="employer" placeholder="Enter the employer of the job (Optional)" name="employer">
+                </div>
+                <div class="nhan16">
+                    <label for="username">Username</label>
+                    <input type="text" id="username" placeholder="Enter your username" name="username" required>
                 </div>
                 <div class="nhan16">
                     <label for="password1">Password</label>
