@@ -233,7 +233,11 @@ footer {
     font-weight: 600;
 }
 
-.nhan11 .nhan15 {
+.nhan14:hover {
+    background-color: rgb(214, 212, 212);
+}
+
+.nhan15 {
     font-size: 1rem;
     text-align: center;
     margin: 20px 0 15px;
@@ -251,10 +255,44 @@ footer {
 
 /* Register page */
 
-.nhan11 .nhan16 {
+.nhan20 {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+    padding-top: 8rem;
+    padding-bottom: 28rem;
+    background: url('images/login.jpg') no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.nhan19 {
+    width: 590px;
+    background: transparent;
+    border: 2px solid rgba(255, 255, 255, .2);
+    color: white;
+    border-radius: 10px;
+    padding: 30px 40px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+}
+
+.nhan19 h1 {
+    font-size: 2.1rem;
+    text-align: center;
+}
+
+.nhan19 h2 {
+    font-size: 1.4rem;
+    text-align: center;
+    padding-top: 35px;
+}
+
+.nhan19 .nhan16 {
     width: 100%;
     height: 50px;
-    margin: 30px 0 35px 0;
+    margin: 15px 0 35px 0;
     position: relative;
 }
 
@@ -276,7 +314,23 @@ footer {
     font-style: italic;
 }
 
-.nhan11 .nhan17 {
+.nhan16 select {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .2);
+    border-radius: 40px;
+    color: white;
+    padding: 0 45px 0 20px;
+}
+
+.nhan16 option {
+    color: black;
+}
+
+.nhan19 .nhan17 {
     width: 100%;
     height: 2.8rem;
     background: white;
@@ -290,6 +344,10 @@ footer {
     font-weight: 600;
     margin-top: 20px;
 } 
+
+.nhan17:hover {
+    background-color: rgb(214, 212, 212);
+}
 
 /* Courses page */
 
