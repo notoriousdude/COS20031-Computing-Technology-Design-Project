@@ -41,7 +41,6 @@
                 <div class="nhan16">
                     <label for="password2">Confirm password</label>
                     <input type="password" id="password2" placeholder="Confirm your password" name="cfpassword" required>
-                    <span id="passwordMatchError" style="color: red; display: none;">Passwords do not match.</span>
                 </div> 
                 <h2>User Information</h2>
                 <div class="nhan16">
@@ -112,18 +111,16 @@
         </div>
     </footer>
     <script>
-        function validateForm() {
-            var password1 = document.getElementById("password1").value;
-            var password2 = document.getElementById("password2").value;
-            var passwordMatchError = document.getElementById("passwordMatchError");
-
-            if (password1 !== password2) {
-                passwordMatchError.style.display = "block";
-                return false;
-            }
-
-            return true;
+        function onChange() {
+        const password = document.querySelector('input[name=password]');
+        const confirm = document.querySelector('input[name=cfpassword]');
+        if (confirm.value === password.value) {
+            confirm.setCustomValidity('');
+        } else {
+            confirm.setCustomValidity('Passwords do not match');
         }
+        }
+                
     </script>
 </body>
 </html>
