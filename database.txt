@@ -100,12 +100,14 @@ CREATE TABLE manager_course_registration (
 CREATE TABLE manager_job_application (
   application_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
   user_id INT NOT NULL,
+  full_name VARCHAR(255) NOT NULL,
   job_id INT NOT NULL,
-  job_title VARCHAR(255) NOT NULL, 
+  job_title VARCHAR(255) NOT NULL,
   delete_option BOOLEAN NOT NULL DEFAULT false,
   FOREIGN KEY (user_id) REFERENCES user_information(user_id),
   FOREIGN KEY (job_id) REFERENCES job_description(job_id)
 );
+
 
 CREATE TABLE manager_user_information (
   user_id INT NOT NULL PRIMARY KEY,
