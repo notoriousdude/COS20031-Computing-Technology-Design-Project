@@ -5,6 +5,7 @@
 /* Item 1 */
 .item1{
     position: relative;
+    margin-bottom: -5px;
 }
 
 .item1 h2{
@@ -15,7 +16,7 @@
     font-size: 50px;
     color: white;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
-    margin: 0;
+    margin-bottom: 350px;
     letter-spacing: 0.2rem;
     text-align: left;
     font-weight: 800;
@@ -28,7 +29,7 @@
 
 .item1 img{
     width: 100%;
-    height: 600px;
+    height: 800px;
 }
 
 /* Item 2 */
@@ -37,8 +38,9 @@
     flex-direction: row;
     max-width: 100%;
     justify-content: space-around;
-    background-image: url(/cos20031/images/background.jpg);
+    background-image: url(./images/background.jpg);
     background-size: 100% 100%;
+    padding: 25px 0;
 }
 
 .item2 h1{
@@ -117,6 +119,7 @@
     border-radius: 5px;
     box-shadow: 0 8px 0 #013a7b;
     transition: .4s;
+    cursor: pointer;
 }
 
 .course_info button:active{
@@ -181,6 +184,7 @@
     border-radius: 5px;
     box-shadow: 0 8px 0 #8C2E6E;
     transition: .4s;
+    cursor: pointer;
 }
 
 .intro .move-jobs:active{
@@ -378,7 +382,7 @@
     width: 100%;
     padding-top: 20px;
     padding-bottom: 50px;
-    background-color: rgb(255, 255, 150);
+    background-color: rgb(160, 226, 255);
 }
 
 .item7 span{
@@ -413,7 +417,7 @@
 }
 
 .item7 .comment{
-    width: 28rem;
+    width: 26rem;
     max-width: 75vw;
     /* height: 400px; */
     box-sizing: content-box;
@@ -426,6 +430,11 @@
     background-color: #2681ea;
     color: white;
     position: relative;
+}
+
+.item7 .comment:hover {
+    cursor: pointer;
+    transform: translateX(5px);
 }
 
 .item7 .comment::after{
@@ -453,13 +462,13 @@
 
 .comment .author{
     box-sizing: content-box;
-    display: flex;
+    /* display: flex; */
     flex-direction: row;
     align-items: stretch;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     line-height: 1.4375rem;
     font-weight: 700;
-    text-align: left;
+    text-align: right;
     letter-spacing: 0.01875rem;
     margin: 0;
     margin-bottom: 0rem;
