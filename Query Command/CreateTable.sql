@@ -1,0 +1,114 @@
+CREATE TABLE user_information (
+  user_id INT NOT NULL AUTO_INCREMENT,
+  full_name VARCHAR(255) NOT NULL,
+  date_of_birth DATE NOT NULL,
+  gender VARCHAR(255) NOT NULL,
+  phone_number VARCHAR(255) NOT NULL,
+  email VARCHAR(255) NOT NULL,
+  address VARCHAR(255) NOT NULL,
+  PRIMARY KEY (user_id)
+);
+
+CREATE TABLE educational_backgrounds (
+  user_id INT NOT NULL,
+  degree VARCHAR(255) NOT NULL,
+  institution VARCHAR(255) NOT NULL,
+  PRIMARY KEY (user_id),
+  FOREIGN KEY (user_id) REFERENCES user_information(user_id)
+);
+
+CREATE TABLE working_experiences (
+  user_id INT NOT NULL,
+  job_title VARCHAR(255) NOT NULL,
+  employer VARCHAR(255) NOT NULL,
+  PRIMARY KEY (user_id),
+  FOREIGN KEY (user_id) REFERENCES user_information(user_id)
+);
+
+CREATE TABLE user_login (
+    user_id INT,
+    username VARCHAR(50) NOT NULL,
+    password VARCHAR(255) NOT NULL,
+    PRIMARY KEY (user_id),
+    FOREIGN KEY (user_id) REFERENCES user_information (user_id)
+);
+
+
+CREATE TABLE job_description (
+  job_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  job_title VARCHAR(255) NOT NULL,
+  recruiter VARCHAR(255) NOT NULL,
+  application_deadline DATE NOT NULL,
+  salary DECIMAL(10,2) NOT NULL,
+  working_location VARCHAR(255) NOT NULL,
+  category VARCHAR(50) NOT NULL,
+  applicant_count INT NOT NULL DEFAULT 0
+);
+
+CREATE TABLE job_requirements (
+  job_id INT NOT NULL,
+  requirement TEXT NOT NULL,
+  PRIMARY KEY (job_id),
+  FOREIGN KEY (job_id) REFERENCES job_description(job_id)
+);
+
+CREATE TABLE job_benefits (
+  job_id INT NOT NULL,
+  benefit TEXT NOT NULL,
+  PRIMARY KEY (job_id),
+  FOREIGN KEY (job_id) REFERENCES job_description(job_id)
+);
+
+
+CREATE TABLE courses (
+  course_id INT NOT NULL AUTO_INCREMENT,
+  course_name VARCHAR(255) NOT NULL,
+  course_length INT NOT NULL,
+  course_price DECIMAL(10,2) NOT NULL,
+  category VARCHAR(50) NOT NULL,
+  enrolment_count INT NOT NULL DEFAULT 0,
+  PRIMARY KEY (course_id)
+);
+
+CREATE TABLE course_outlines (
+  course_id INT NOT NULL,
+  outline_text TEXT NOT NULL,
+  PRIMARY KEY (course_id),
+  FOREIGN KEY (course_id) REFERENCES courses(course_id)
+);
+
+CREATE TABLE course_outcomes (
+  course_id INT NOT NULL,
+  outcome_text TEXT NOT NULL,
+  PRIMARY KEY (course_id),
+  FOREIGN KEY (course_id) REFERENCES courses(course_id)
+);
+
+CREATE TABLE manager_course_registration (
+  registration_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  user_id INT NOT NULL,
+  full_name VARCHAR(255) NOT NULL,
+  course_id INT NOT NULL,
+  course_name VARCHAR(255) NOT NULL,
+  FOREIGN KEY (user_id) REFERENCES user_information(user_id),
+  FOREIGN KEY (course_id) REFERENCES courses(course_id)
+);
+
+
+CREATE TABLE manager_job_application (
+  application_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  user_id INT NOT NULL,
+  full_name VARCHAR(255) NOT NULL,
+  job_id INT NOT NULL,
+  job_title VARCHAR(255) NOT NULL,
+  FOREIGN KEY (user_id) REFERENCES user_information(user_id),
+  FOREIGN KEY (job_id) REFERENCES job_description(job_id)
+);
+
+
+
+CREATE TABLE manager_login (
+  manager_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
+  username VARCHAR(50) NOT NULL,
+  password VARCHAR(255) NOT NULL
+);
