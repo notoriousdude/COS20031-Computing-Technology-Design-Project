@@ -40,7 +40,7 @@ CREATE TABLE job_description (
   recruiter VARCHAR(255) NOT NULL,
   application_deadline DATE NOT NULL,
   salary DECIMAL(10,2) NOT NULL,
-  working_location VARCHAR(255) NOT NULL
+  working_location VARCHAR(255) NOT NULL,
   category VARCHAR(50) NOT NULL,
   applicant_count INT NOT NULL DEFAULT 0
 );
