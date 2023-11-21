@@ -63,7 +63,7 @@ CREATE TABLE job_benefits (
 CREATE TABLE courses (
   course_id INT NOT NULL AUTO_INCREMENT,
   course_name VARCHAR(255) NOT NULL,
-  course_length INT NOT NULL,
+  course_length VARCHAR(255) NOT NULL,
   course_price DECIMAL(10,2) NOT NULL,
   category VARCHAR(50) NOT NULL,
   enrolment_count INT NOT NULL DEFAULT 0,
