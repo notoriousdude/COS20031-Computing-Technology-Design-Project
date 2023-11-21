@@ -38,7 +38,7 @@ CREATE TABLE job_description (
   job_id INT NOT NULL AUTO_INCREMENT PRIMARY KEY,
   job_title VARCHAR(255) NOT NULL,
   recruiter VARCHAR(255) NOT NULL,
-  application_deadline DATE NOT NULL,
+  application_deadline VARCHAR(255) NOT NULL,
   salary DECIMAL(10,2) NOT NULL,
   working_location VARCHAR(255) NOT NULL,
   category VARCHAR(50) NOT NULL,
