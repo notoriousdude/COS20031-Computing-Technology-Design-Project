@@ -10,7 +10,7 @@ COS20031 - Swinburne University of Technology
 
 <p>🔭 &nbsp; STEP 1: Git clone/Download the source code folder to your own computer</p>
 <p>🤔 &nbsp; STEP 2: Place it into the folder htdocs in XAMPP folder like this path "\XAMPP\htdocs"</p>
-<p>🎓 &nbsp; STEP 3: Open feenix-mariadb, sign in with the information in file 'connect.php'</p>
+<p>🎓 &nbsp; STEP 3: Open Feenix Mariadb, sign in with the information in file 'connect.php'</p>
 <p>🎓 &nbsp; STEP 4: Open a new tab in your web browser, type "localhost\(your path of the folder code you place it)"</p>
 <p>💼 &nbsp; STEP 5: Register (no need to login as we have not developed the function) and enjoy using our website, purchasing courses and applying jobs you want =)))).</p>
 <br />
