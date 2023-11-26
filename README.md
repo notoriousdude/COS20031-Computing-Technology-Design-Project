@@ -13,15 +13,13 @@ COS20031 - Swinburne University of Technology
 <p>🎓 &nbsp; STEP 3: Open a new tab in your web browser, type "localhost\(your path of the folder code you place it)"</p>
 <p>💼 &nbsp; STEP 4: Enjoy using our website, purchasing courses and applying jobs you want =)))).</p>
 
-<p align="center">
+<h3> 👨🏻‍💻 Steps to run and test our website </h3>
 
-</p>
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=akash-chowrasia&label=Profile%20views&color=0e75b6&style=flat" alt="akash-chowrasia" /> </p>
 <img align="right" width=300px alt="Unicorn" src="https://media.giphy.com/media/3ohs4BSacFKI7A717y/giphy.gif" />
 
 <img src="https://media.giphy.com/media/ObNTw8Uzwy6KQ/giphy.gif" width="30px">&nbsp;***Talking about Personal Stuffs...***
-
+<p align='left'>
 ✔ Pronouns: ***He/His*** or ***TeamMaker***😉 <br>
 ✔ I’m currently Developing **Paycron** Payment Gateway **@Plaxonic**<br>
 ✔ I’m currently learning **ReactJS** & **NodeJS**<br>
@@ -31,4 +29,5 @@ COS20031 - Swinburne University of Technology
 ✔ I use to write coad on [leetcode](https://leetcode.com/Akash_Chowrasia/) <br>
 ✔ Ask me about anything, I am happy to help, only if the ball is in my court!😉<br>
 ✔ Fun fact : *At The time of Stress coding, I use to be in half sleeping mode*<br><br><br><br>
+</p>
  
