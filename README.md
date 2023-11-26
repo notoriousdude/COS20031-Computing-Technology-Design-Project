@@ -27,7 +27,7 @@ COS20031 - Swinburne University of Technology
 </p>
 <img align="right" width=300px alt="Unicorn" src="https://media.giphy.com/media/3ohs4BSacFKI7A717y/giphy.gif" />
 
-✔ Step 1: Download XAMPP<br><img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Developer.gif" width="30px"> 
+✔ Step 1: Download XAMPP <img src="https://github.com/TheDudeThatCode/TheDudeThatCode/blob/master/Assets/Developer.gif" width="30px"> 
 ✔ Step 2: Run this command "localhost\phpmyadmin"*<br>
 ✔ Step 3: Create database, tables and insert dummy data using our folders available on github<br>
 ✔ Step 4: Following the above instruction to test our website and also check the efficiency of database and backend system 😉<br>
