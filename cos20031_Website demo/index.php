@@ -21,7 +21,6 @@
                 <li><a href="course.php" class="nhan5">Courses</a></li>
                 <li><a href="job.php" class="nhan5">Jobs</a></li>
                 <li><a href="profile.php" class="nhan5">Your Profile</a></li>
-                <li><a href="manager.php" class="nhan5">Your manager</a></li>
             </ul>
             <div class="nhan6">
                 <a href="login.php" class="nhan5"><i class="fa-solid fa-user"></i></a>
