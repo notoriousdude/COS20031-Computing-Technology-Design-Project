@@ -149,11 +149,11 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                 </div>
                 <h2>Educational Background</h2>
                 <div class="nhan16">
-                    <label for="degree">Degree</label>
+                    <label for="degree">Degree (optional)</label>
                     <input type="text" id="degree" placeholder="Enter your degree" name="degree">
                 </div>
                 <div class="nhan16">
-                    <label for="institution">Institution</label>
+                    <label for="institution">Institution (optional)</label>
                     <input type="text" id="institution" placeholder="Enter your institution" name="institution">
                 </div>
                 <h2>Working Experience</h2>
