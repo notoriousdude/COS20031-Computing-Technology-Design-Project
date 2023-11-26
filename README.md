@@ -21,7 +21,7 @@ COS20031 - Swinburne University of Technology
 
 <p align="center">
   <em>
-    <h3> 👨🏻‍💻 Steps to create database on localhost and test our website <em>(OPTIONAL)</em></h3>
+    <h3> 👨🏻‍💻 Steps to create database on localhost to test our website and database performance <em>(OPTIONAL)</em></h3>
   </em> 
   <br>
 </p>
