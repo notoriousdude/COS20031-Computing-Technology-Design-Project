@@ -9,9 +9,9 @@ COS20031 - Swinburne University of Technology
 <h3> 👨🏻‍💻 Steps to run and test our website </h3>
 
 <p>🔭 &nbsp; STEP 1: Git clone/Download the source code folder to your own computer</p>
-<p>🤔 &nbsp; STEP 2: Place it into the folder htdocs in XAMPP folder like this path "\XAMPP\htdocs"</p>
+<p>🤔 &nbsp; STEP 2: Place the 'cos20031_Website demo' folder into the folder 'htdocs' in XAMPP folder like this path "\XAMPP\htdocs"</p>
 <p>🎓 &nbsp; STEP 3: Open Feenix Mariadb, sign in with the information in file 'connect.php'</p>
-<p>🎓 &nbsp; STEP 4: Open a new tab in your web browser, type "localhost\(your path of the folder code you place it)"</p>
+<p>🎓 &nbsp; STEP 4: Open a new tab in your web browser, type "localhost\(your path of the code folder that you place in step 2)"</p>
 <p>💼 &nbsp; STEP 5: Register (no need to login as we have not developed the function) and enjoy using our website, purchasing courses and applying jobs you want =)))).</p>
 <br />
 <br />
