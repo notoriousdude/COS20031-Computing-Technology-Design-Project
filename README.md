@@ -12,6 +12,11 @@ COS20031 - Swinburne University of Technology
 <p>🤔 &nbsp; STEP 2: Place it into the folder htdocs in XAMPP folder like this path "\XAMPP\htdocs"</p>
 <p>🎓 &nbsp; STEP 3: Open a new tab in your web browser, type "localhost\(your path of the folder code you place it)"</p>
 <p>💼 &nbsp; STEP 4: Enjoy using our website, purchasing courses and applying jobs you want =)))).</p>
+<br />
+<br />
+
+<br />
+
 
 
 <p align="center">
@@ -19,7 +24,7 @@ COS20031 - Swinburne University of Technology
     <h3> 👨🏻‍💻 Steps to create database on localhost and test our website </h3>
   </em> 
   <br>
-  <img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="50" /> <b><i>Learning while HOPING & HUSTLING!!!</i></b> <img src="https://media.giphy.com/media/7j2hfyeVcDtf2/giphy.gif" width="50" />
+ />
 </p>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=akash-chowrasia&label=Profile%20views&color=0e75b6&style=flat" alt="akash-chowrasia" /> </p>
