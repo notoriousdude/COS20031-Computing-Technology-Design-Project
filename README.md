@@ -5,7 +5,7 @@ COS20031 - Swinburne University of Technology
 <h1> Hey there! We are TANK 👋 </h1>
 <h2> A Passionate, Hard-working and Dedicated TEAM From Vietnam vn !
 </h2>
-<img align="right" alt="GIF" src="https://github.com/Anmol-Baranwal/Cool-GIFs-For-GitHub/assets/74038190/9d0fd0c4-5c7f-4122-b884-64a1e1685d2d" width="500"/>
+<img align="right" alt="GIF" src="https://github.com/Anmol-Baranwal/Cool-GIFs-For-GitHub/assets/74038190/219bcc70-f5dc-466b-9a60-29653d8e8433" width="500"/>
 <h3> 👨🏻‍💻 Steps to run and test our website </h3>
 
 <p>🔭 &nbsp; STEP 1: Git clone/Download the source code folder to your own computer</p>
